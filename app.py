@@ -38,7 +38,7 @@ def profile():
     return render_template('profile.html')
 @app.route("/music")
 def music():
-    return render_template("Music.html")
+    return render_template("music.html")
 
 @app.route("/thankyou")
 def thankyou():
