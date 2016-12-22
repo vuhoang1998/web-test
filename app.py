@@ -38,7 +38,7 @@ def profile():
     return render_template('profile.html')
 @app.route("/music")
 def music():
-    return render_template("music.html")
+    return render_template("music.html",music_list= User.objects)
 
 @app.route("/thankyou")
 def thankyou():
@@ -47,7 +47,7 @@ def thankyou():
 
 @app.route("/music-add")
 def music_add():
-    return render_template("music_add.html",music_list=User.objects)
+    return render_template("music.html",music_list=User.objects)
 
 @app.route("/register", methods=["GET","POST"])
 def register():
